@@ -4,8 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
     tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="1500dp"
+        android:layout_height="1000dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/background" />
+        " />
 
     <TextView
         android:id="@+id/counter"
@@ -33,12 +43,13 @@
         android:id="@+id/inc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Upgrade to get +1"
+        android:text="@string/upgrade_to_get_1"
         android:visibility="invisible"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/add"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/counter" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
